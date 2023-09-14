@@ -22,6 +22,10 @@
 
 </head>
 <body>
+     <?php
+include 'koneksi.php';
+include 'ceksession.php';
+?>
     <!-- navbar start -->
     <nav class="navbar">
     <a href="#" class="navbar-logo">SMKN 4<span> Banjarmasin</span>.</a>
@@ -29,16 +33,16 @@
     <div class="navbar-nav">
     <a href="#home"><i data-feather="home"></i> Beranda</a>
     <a href="#about"><i data-feather="info"></i> Tentang Kami</a>
-    <a href="#about"><i data-feather="info"></i> Kompetensi Keahlian</a>
-    <a href="#menu"><i data-feather="sliders"></i> Berita</a>
+    <a href="#about"><i data-feather="sliders"></i> Kompetensi Keahlian</a>
+    <a href="#menu"><i data-feather="grid"></i> Berita</a>
     <a href="#contact"><i data-feather="mail"></i> Kontak</a>
     </div>
-<!-- 
+
     <div class="navbar-extra">
-    <a href="#" id="search"><i data-feather="search"></i></a>
-    <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+    <!-- <a href="#" id="search"><i data-feather="search"></i></a>
+    <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a> -->
     <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
-    </div> -->
+    </div>
     </nav>
     <!-- navbar end --> 
     <!-- Hero Section Start -->
@@ -96,7 +100,7 @@
     <p class="menu-card-price" >SMKN 4 Banjarmasin menggelar Job Fair 2023 di Taman Budaya Kalsel di Jalan Brigjen H Hasan Basri, Selasa (5/9/2023) hingga Rabu (6/9/2023).  Total ada 15 perusahaan yang ikut dalam pelaksanaan job fair kali ini dengan ratusan lowongan pekerjaan.  Kegiatan job fair kali…</p>
     </div>
 
-    <a href="#kangkung" >
+    <a href="#news2" >
     <div class="menu-card">
     <img src="image/news2.jpeg" 
          alt="Espresso" class="menu-card-img">
@@ -104,7 +108,7 @@
     <p class="menu-card-price">IHT Persiapan pembelajaran implementasi kurikulum merdeka guru di sekolah tahun pelajaran 2023/2024 adalah suatu kegiatan yang diadakan untuk persiapan pembelajaran dalam kurikulum merdeka agar dapat…?</p>
     </div>
 
-    <a href="#sawi" >
+    <a href="#news3" >
     <div class="menu-card">
     <img src="image/news5.jpeg" 
          alt="Espresso" class="menu-card-img">
@@ -113,7 +117,7 @@
 </p>
     </div>
 
-    <a href="#singkong" >
+    <a href="#news4" >
     <div class="menu-card">
     <img src="image/news4.jpeg" 
          alt="Espresso" class="menu-card-img">
@@ -132,13 +136,13 @@
      <p id="news1"></p>
     <h2><span>Berita </span>Selengkapnya</h2>
     
-    
-    <div class="about-img" style="text-align: center;">
+    <div style="text-align: center;"></div>
+    <div class="about-img">
     <img src="image/news1.jpeg"
          alt="Tentang Kami">
     </div>
 
-    <div style="text-align: justify; padding-right:27em; padding-left:27em;">
+   
     <div class="content">
     <h3>SMKN 4 Banjarmasin Gelar Kegiatan Job Fair 2023</h3>
     <p>SMKN 4 Banjarmasin menggelar Job Fair 2023 di Taman Budaya Kalsel di Jalan Brigjen H Hasan Basri, Selasa (5/9/2023) hingga Rabu (6/9/2023). 
@@ -161,29 +165,27 @@ Sementara itu, job fair tak hanya didatangi oleh lulusan SMKN 4 saja. Namira alu
 Artikel ini telah tayang di BanjarmasinPost.co.id dengan judul SMKN 4 Banjarmasin Gelar Job Fair 2023, 15 Perusahaan Buka Lowongan Kerja, https://banjarmasin.tribunnews.com/2023/09/05/smkn-4-banjarmasin-gelar-job-fair-2023-15-perusahaan-buka-lowongan-kerja.
 .
     </p>
-</div>
+
     </div>
 
-    <p id="kangkung"></p>
+    <p id="news2"></p>
     <h2>. <span>. </span>.</h2>
     <div class="about-img" style="text-align: center;">
     <img src="image/news2.jpeg"
          alt="Tentang Kami">
     </div>
 
-    <div style="text-align: justify; padding-right:27em; padding-left:27em;">
+
     <div class="content">
-    <h3>SMKN 4 Banjarmasin Gelar Kegiatan Job Fair 2023</h3>
+    <h3>IHT Persiapan pembelajaran implementasi kurikulum merdeka guru di sekolah</h3>
     <p>
-25 JULI 2023TAK BERKATEGORI BY ADMIN
-IHT PERSIAPAN PEMBELAJARAN IMPLEMENTASI KURIKULUM MERDEKA GURU DI SEKOLAH
-IHT PERSIAPAN PEMBELAJARAN IMPLEMENTASI KURIKULUM MERDEKA GURU DI SEKOLAH Tahun Pelajaran 2023/2024 adalah suatu kegiatan yang diadakan untuk persiapan pembelajaran dalam kurikulum merdeka agar dapat membantu guru untuk memahami potensi siswa secara lebih mendalam dan memberikan guru panduan tentang bagaimana mengidentifikasi minat dan potensi serta gaya belajar siswa, sehingga pembelajaran dapat disesuaikan dengan kebutuhan dan minat mereka.
+    IHT Persiapan pembelajaran implementasi kurikulum merdeka guru di sekolah tahun pelajaran 2023/2024 adalah suatu kegiatan yang diadakan untuk persiapan pembelajaran dalam kurikulum merdeka agar dapat membantu guru untuk memahami potensi siswa secara lebih mendalam dan memberikan guru panduan tentang bagaimana mengidentifikasi minat dan potensi serta gaya belajar siswa, sehingga pembelajaran dapat disesuaikan dengan kebutuhan dan minat mereka.
 IHT persiapan pembelajaran ini juga membantu guru untuk mengeksplorasi metode pembelajaran yang dapat merangsang kreativitas siswa. Guru akan diberikan panduan tentang strategi pengajaran yang mendorong pemecahan masalah, berpikir kritis, dan kolaborasi antar siswa.
     </p>
-</div>
+
     </div>
 
-    <p id="sawi"></p>
+    <p id="news3"></p>
     <h2>. <span>. </span>.</h2>
     <div class="row">
     <div class="about-img">
@@ -201,7 +203,7 @@ IHT persiapan pembelajaran ini juga membantu guru untuk mengeksplorasi metode pe
     </div>
     </div>
 
-    <p id="singkong"></p>
+    <p id="news4"></p>
     <h2>. <span>. </span>.</h2>
     <div class="row">
     <div class="about-img">
