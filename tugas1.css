@@ -16,7 +16,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'Poppins' , sans-serif;
+    font-family: sans-serif;
     background-color: var(--bg);
     color: #fff;
     min-height: 3000px;
@@ -70,16 +70,18 @@ body{
 .navbar .navbar-nav a:hover::after{
     transform: scaleX(1);
 }
+.navbar .navbar-nav a i{
+    padding-top: 2px;
+}
 
-
-/* .navbar .navbar-extra a{
+.navbar .navbar-extra a{
     color: #fff;
     margin: 0 0.5rem;
-} */
+} 
 
-/* .navbar .navbar-extra a:hover{
+ .navbar .navbar-extra a:hover{
     color: var(--primary);
-} */
+}
 
 #hamburger-menu{
     display: none;
@@ -90,7 +92,7 @@ body{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url('image/daunbg.jpg');
+    background-image: url('image/blackhole.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -243,8 +245,13 @@ body{
 .artikels .row .about-img{
     flex: 1 1 45rem;
 }
-.artikels .about-img img{
+/* .artikels .about-img img{
     border-radius: 2%;
+    text-align: center;
+} */
+.artikels .about-img img{
+    width: 100%;
+    border-radius: 3%;
     text-align: center;
 }
 .artikels .row .about-img img{
@@ -252,15 +259,15 @@ body{
     border-radius: 3%;
     text-align: center;
 }
-.artikels .row .content{
+.artikels .content{
     flex: 1 1 35rem;
     padding : 0 1rem;
 }
-.artikels .row .content h3{
+.artikels .content h3{
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
-.artikels .row .content p{
+.artikels .content p{
     margin-bottom: 0.8rem;
     font-size: 1.4rem;
     font-weight: 100;
